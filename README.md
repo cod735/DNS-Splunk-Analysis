@@ -36,7 +36,7 @@ This project demonstrates the analysis of DNS log data using Splunk SIEM to iden
 
 ---
 
-## ⚙️ Project Setup
+## Project Setup
 
 ###  Data Preparation
 
@@ -74,7 +74,7 @@ index=dns_lab
 
 ---
 
-## 🧪 Queries Used (Initial)
+##  Queries Used (Initial)
 
 ```
 index=dns_lab
