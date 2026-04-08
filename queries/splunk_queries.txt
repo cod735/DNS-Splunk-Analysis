@@ -1,0 +1,36 @@
+---
+
+source="dns.log" host="abbaskhan-VMware-Virtual-Platform" sourcetype="dnslogs"
+--
+
+---
+
+source="dns.log" host="abbaskhan-VMware-Virtual-Platform" sourcetype="dnslogs" |regex _raw="(?i)\b(dns|domain|query|response|port 53)\b
+--
+
+---
+
+ source="dns.log" host="abbaskhan-VMware-Virtual-Platform" sourcetype="dnslogs" | stats count by domain 
+--
+
+---
+
+ source="dns.log" host="abbaskhan-VMware-Virtual-Platform" sourcetype="dnslogs" | top doamin, src_ip
+
+---
+
+index=_* OR index=* sourcetype=dnslogs domain="44.206.168.192.in-addr.arpa" src_ip="192.168.202.83"
+--
+##  High-Frequency Reverse DNS Activity
+
+###  Observed Data
+
+| Field | Value |
+|------|------|
+| Source IP | 192.168.202.83 |
+| Destination IP | 192.168.207.4 |
+| Domain Queried | 44.206.168.192.in-addr.arpa |
+| Destination Port | 53 (DNS) |
+| Total Queries | 14,312 |
+| Distribution | 100% from single source |
+
