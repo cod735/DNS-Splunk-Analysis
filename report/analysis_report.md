@@ -70,6 +70,19 @@ index=_* OR index=* sourcetype=dnslogs domain="44.206.168.192.in-addr.arpa" src_
   - Scripted or automated process
   - Potential compromised system performing reconnaissance
 
+  ##  High-Frequency Reverse DNS Activity
+
+###  Observed Data
+
+| Field | Value |
+|------|------|
+| Source IP | 192.168.202.83 |
+| Destination IP | 192.168.207.4 |
+| Domain Queried | 44.206.168.192.in-addr.arpa |
+| Destination Port | 53 (DNS) |
+| Total Queries | 14,312 |
+| Distribution | 100% from single source |
+
 5. Investigate Suspicious Domains
 
     Search for domains associated with known malicious activity or suspicious behavior.

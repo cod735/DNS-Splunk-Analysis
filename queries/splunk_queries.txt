@@ -21,16 +21,5 @@ source="dns.log" host="abbaskhan-VMware-Virtual-Platform" sourcetype="dnslogs" |
 
 index=_* OR index=* sourcetype=dnslogs domain="44.206.168.192.in-addr.arpa" src_ip="192.168.202.83"
 --
-##  High-Frequency Reverse DNS Activity
 
-###  Observed Data
-
-| Field | Value |
-|------|------|
-| Source IP | 192.168.202.83 |
-| Destination IP | 192.168.207.4 |
-| Domain Queried | 44.206.168.192.in-addr.arpa |
-| Destination Port | 53 (DNS) |
-| Total Queries | 14,312 |
-| Distribution | 100% from single source |
 
